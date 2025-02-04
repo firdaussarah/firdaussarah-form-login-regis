@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    animation: borderGlow 2.7s linear infinite;
+}
+
+/* Animasi border bergerak */
+@keyframes borderGlow {
+    0% {
+        border-image-source: linear-gradient(90deg, #ff4d4d, #ffad33, #4dff4d, #4d4dff, #ff4d4d);
+        border-image-slice: 1;
+    }
+    50% {
+        border-image-source: linear-gradient(90deg, #4d4dff, #4dff4d, #ffad33, #ff4d4d, #4d4dff);
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, #ff4d4d, #ffad33, #4dff4d, #4d4dff, #ff4d4d);
+    }
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #ff00d4;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff00d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b30083;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+
+p a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Pesan Error */
+.error-message {
+    background-color: #f8d7f1; /* Warna latar belakang merah muda */
+    color: #721c1c;            /* Warna teks merah */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb; /* Border warna merah terang */
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sedikit bayangan di sekitar kotak */
+}
+
+/* Mengatur padding dan margin agar lebih rapi */
+.error-message p {
+    margin: 0;
+    padding: 0;
+}
+
